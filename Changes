@@ -1,5 +1,10 @@
 Revision history for Perl module Date::WeekNumber
 
+0.02 2014-03-06
+    - POSIX::strftime() doesn't handle %G or %V on Windows. Sigh.
+      We now use strftime() for cpan_week_number() and Date::Calc()
+      for iso_week_number().
+
 0.01 2014-03-03
     - First release to CPAN
 

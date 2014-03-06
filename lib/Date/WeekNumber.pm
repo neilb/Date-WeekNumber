@@ -6,7 +6,6 @@ use strict;
 use warnings;
 use parent 'Exporter';
 use Carp;
-use POSIX qw(strftime);
 use Scalar::Util qw/ reftype /;
 
 our @EXPORT_OK = qw(iso_week_number cpan_week_number);
@@ -14,8 +13,12 @@ our @EXPORT_OK = qw(iso_week_number cpan_week_number);
 sub iso_week_number
 {
     my $date = _dwim_date(@_);
-    return strftime('%G-W%V', 0, 0, 12,
-                    $date->{day}, $date->{month}-1, $date->{year}-1900);
+
+    require Date::Calc;
+
+    my ($week, $year) = Date::Calc::Week_of_Year($date->{year}, $date->{month}, $date->{day});
+
+    return sprintf('%.4d-W%.2d', $year, $week);
 }
 
 # If %U returns a week number of 0, it means the day
@@ -24,13 +27,15 @@ sub iso_week_number
 sub cpan_week_number
 {
     my $date = _dwim_date(@_);
-    my $week_number = strftime('%U', 0, 0, 12,
+
+    require POSIX;
+    my $week_number = POSIX::strftime('%U', 0, 0, 12,
                                $date->{day},
                                $date->{month}-1,
                                $date->{year}-1900);
     if ($week_number == 0) {
         $date->{year}--;
-        $week_number = strftime('%U', 0, 0, 12, 31, 11, $date->{year}-1900);
+        $week_number = POSIX::strftime('%U', 0, 0, 12, 31, 11, $date->{year}-1900);
     }
     return sprintf('%.4d-W%.2d', $date->{year}, $week_number);
 }

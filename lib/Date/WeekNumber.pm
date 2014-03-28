@@ -201,8 +201,7 @@ L<Date::ISO8601> provides a number of functions for converting
 dates according to ISO 8601.
 
 L<Date::ISO> can be used to produce an ISO week number,
-but you need to use the C<iso_year()> method, which isn't
-mentioned in the documentation.
+using the C<iso_year()> and C<iso_week()> methods.
 
 L<Date::WeekOfYear> provides a C<WeekOfYear()> function,
 which returns the week number and associated year.

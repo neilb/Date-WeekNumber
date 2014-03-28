@@ -206,8 +206,9 @@ mentioned in the documentation.
 
 L<Date::WeekOfYear> provides a C<WeekOfYear()> function,
 which returns the week number and associated year.
-It doesn't say what scheme it follows though, and it
-certainly isn't the ISO 8601 scheme.
+As of version 1.5 this return the ISO 8601 week number,
+prior to that it returned something slightly different;
+you can still request the old week numbering scheme.
 
 =head1 REPOSITORY
 

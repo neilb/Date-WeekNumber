@@ -1,5 +1,9 @@
 Revision history for Perl module Date::WeekNumber
 
+0.03 2014-03-28
+    - Updated SEE ALSO: Date::WeekOfYear now returns ISO 8601 week number
+      by default, and supports the old week number scheme as an option.
+
 0.02 2014-03-06
     - POSIX::strftime() doesn't handle %G or %V on Windows. Sigh.
       We now use strftime() for cpan_week_number() and Date::Calc()

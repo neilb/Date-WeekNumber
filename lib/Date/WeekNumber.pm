@@ -51,6 +51,9 @@ sub _dwim_date
                           && exists($param->{day});
             croak "you must specify year, month and day\n";
         }
+        elsif (reftype($param)) {
+            croak "you can't pass a reference of type ".reftype($param);
+        }
         elsif ($param =~ /^([0-9][0-9][0-9][0-9])-([0-9][0-9])-([0-9][0-9])$/) {
             return { year => $1, month => $2, day => $3 };
         }

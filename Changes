@@ -1,5 +1,9 @@
 Revision history for Perl module Date::WeekNumber
 
+0.04 2014-04-11
+    - Added t/03-bad-inputs.t testing various cases of bad inputs
+    - Added more error checking as a result of coverage testing the above
+
 0.03 2014-03-28
     - Updated SEE ALSO: Date::WeekOfYear now returns ISO 8601 week number
       by default, and supports the old week number scheme as an option.

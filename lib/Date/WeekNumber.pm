@@ -220,7 +220,7 @@ you can still request the old week numbering scheme.
 
 =head1 REPOSITORY
 
-L<https://github.com/neilbowers/Date-WeekNumber>
+L<https://github.com/neilb/Date-WeekNumber>
 
 =head1 AUTHOR
 

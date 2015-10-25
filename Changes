@@ -1,5 +1,8 @@
 Revision history for Perl module Date::WeekNumber
 
+0.05 2015-10-25
+    - Updated github repo URL (metadata, doc) after changing my github username
+
 0.04 2014-04-11
     - Added t/03-bad-inputs.t testing various cases of bad inputs
     - Added more error checking as a result of coverage testing the above

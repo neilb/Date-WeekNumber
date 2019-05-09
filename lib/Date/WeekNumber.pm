@@ -117,7 +117,7 @@ and C<cpan_week_number()>, where the weeks run from Sunday through Saturday.
 A more complete definition of the week naming schemes is given below.
 
 The CPAN week number is the definition used by Chris Madsen's
-L<CPAN once a week, every week|http://onceaweek.cjmweb.net> contest,
+L<CPAN once a week, every week|https://github.com/madsen/cpan-once-a-week-data> contest,
 and my L<CPAN new dist per month|http://neilb.org/neocpanisms/> contest.
 
 There are a number of modules that can be used to calculate the week

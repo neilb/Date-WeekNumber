@@ -196,6 +196,14 @@ and 2007-W01 runs from Sunday 7th January to Saturday 13th January.
 
 =head1 SEE ALSO
 
+L<Date::WeekOfYear> provides a C<WeekOfYear()> function,
+which returns the week number and associated year.
+As of version 1.05 this return the ISO 8601 week number,
+prior to that it returned something slightly different;
+you can still request the old week numbering scheme.
+Version 1.06 provided a mode for giving the output in the same
+format as this module.
+
 L<POSIX> contains the C<strftime()> function,
 which is used by Date::WeekNumber.
 
@@ -211,12 +219,6 @@ dates according to ISO 8601.
 
 L<Date::ISO> can be used to produce an ISO week number,
 using the C<iso_year()> and C<iso_week()> methods.
-
-L<Date::WeekOfYear> provides a C<WeekOfYear()> function,
-which returns the week number and associated year.
-As of version 1.5 this return the ISO 8601 week number,
-prior to that it returned something slightly different;
-you can still request the old week numbering scheme.
 
 =head1 REPOSITORY
 

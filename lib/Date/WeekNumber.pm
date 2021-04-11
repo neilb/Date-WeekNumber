@@ -118,7 +118,7 @@ A more complete definition of the week naming schemes is given below.
 
 The CPAN week number is the definition used by Chris Madsen's
 L<CPAN once a week, every week|https://github.com/madsen/cpan-once-a-week-data> contest,
-and my L<CPAN new dist per month|http://neilb.org/neocpanisms/> contest.
+and my L<CPAN Regulars Releasers|http://neilb.org/cpan-regulars/> page.
 
 There are a number of modules that can be used to calculate the week
 number, but I wanted a minimalist interface that returned a string format,

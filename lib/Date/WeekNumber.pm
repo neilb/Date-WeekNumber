@@ -214,6 +214,11 @@ It also provides C<strftime()>.
 L<Date::Calc> provides C<Week_of_Year()>, which returns
 the ISO week number and associated year.
 
+L<Date::Manip> provides a function C<Date_WeekOfYear>
+which returns a week number between 0 and 53.
+Zero means it's a week in the previous year,
+and 53 I<may> be in the following year.
+
 L<Date::ISO8601> provides a number of functions for converting
 dates according to ISO 8601.
 

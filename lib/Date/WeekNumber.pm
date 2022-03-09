@@ -178,7 +178,7 @@ from 2011 to 2012:
  18 19 20 21 22 23 24    22 23 24 25 26 27 28
  25 26 27 28 29 30 31    29 30 31
 
-Week 2014-W01 runs from Sunday 1st January to Saturday 7th January.
+Week 2012-W01 runs from Sunday 1st January to Saturday 7th January.
 
 Now look at the transition from 2006 to 2007:
 
